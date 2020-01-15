@@ -74,14 +74,14 @@ export interface ZoomableGroupProps {
 export interface GeographiesProps {
     disableOptimization?: boolean;
     geography?: string | { [key: string]: any } | string[];
-    children?: (geographies: object[], projection: GeoProjection) => void;
+    children?: (geographies: any[], projection: GeoProjection) => void;
 }
 
 export interface GeographyProps {
     cacheId?: number | string | null;
     precision?: number;
     round?: boolean;
-    geography?: object;
+    geography?: any;
     projection?: GeoProjection;
     tabable?: boolean;
     style?: {
@@ -89,14 +89,14 @@ export interface GeographyProps {
         hover?: React.CSSProperties;
         pressed?: React.CSSProperties;
     };
-    onClick?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onMouseEnter?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onMouseMove?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onMouseLeave?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onMouseDown?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onMouseUp?: (geography: object, evt: React.MouseEvent<SVGPathElement>) => void;
-    onFocus?: (geography: object, evt: React.FocusEvent<SVGPathElement>) => void;
-    onBlur?: (geography: object, evt: React.FocusEvent<SVGPathElement>) => void;
+    onClick?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onMouseEnter?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onMouseMove?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onMouseLeave?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onMouseDown?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onMouseUp?: (geography: any, evt: React.MouseEvent<SVGPathElement>) => void;
+    onFocus?: (geography: any, evt: React.FocusEvent<SVGPathElement>) => void;
+    onBlur?: (geography: any, evt: React.FocusEvent<SVGPathElement>) => void;
 }
 
 export interface MarkerProps {
